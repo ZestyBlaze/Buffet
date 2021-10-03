@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "buffet",
+  "version": "${version}",
+
+  "name": "Buffet",
+  "description": "A 1.17 Minecraft Mod That Overhauls The Minecraft Food System And Options",
+  "authors": [
+    "ZestyBlaze"
+  ],
+  "contact": {
+    "homepage": "https://github.com/ZestyBlaze/Buffet",
+    "sources": "https://github.com/ZestyBlaze/Buffet"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.zestyblaze.buffet.Buffet"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  }
+}
