@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    "ccc",
+    " b "
+  ],
+  "key": {
+    "c": {
+      "item": "minecraft:chorus_fruit"
+    },
+    "b": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "buffet:chorus_soup"
+  }
+}

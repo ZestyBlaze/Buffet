@@ -1,0 +1,26 @@
+{
+  "item.buffet.pan": "Pan",
+  "item.buffet.pot": "Pot",
+  "item.buffet.baking_bowl": "Baking Bowl",
+  "item.buffet.spoon": "Spoon",
+
+  "item.buffet.wooden_knife": "Wooden Knife",
+  "item.buffet.stone_knife": "Stone Knife",
+  "item.buffet.iron_knife": "Iron Knife",
+  "item.buffet.golden_knife": "Golden Knife",
+  "item.buffet.diamond_knife": "Diamond Knife",
+  "item.buffet.netherite_knife": "Netherite Knife",
+
+  "item.buffet.chorus_soup": "Chorus Soup",
+
+  "block.buffet.stove": "Stove",
+
+  "effect.buffet.bleeding": "Bleeding",
+
+  "death.attack.bleeding": "%1$s couldn't stem the bleeding",
+
+  "itemGroup.buffet.buffet_tools": "Buffet Tools",
+  "itemGroup.buffet.buffet_knives": "Buffet Knives",
+  "itemGroup.buffet.buffet_blocks": "Buffet Blocks",
+  "itemGroup.buffet.buffet_meals": "Buffet Meals"
+}
