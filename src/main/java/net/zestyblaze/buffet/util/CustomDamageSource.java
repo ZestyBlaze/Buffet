@@ -1,4 +1,4 @@
-package net.zestyblaze.buffet.misc;
+package net.zestyblaze.buffet.util;
 
 import net.minecraft.entity.damage.DamageSource;
 

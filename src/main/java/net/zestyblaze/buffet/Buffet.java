@@ -11,14 +11,14 @@ import net.zestyblaze.buffet.init.BlockInit;
 import net.zestyblaze.buffet.init.EffectInit;
 import net.zestyblaze.buffet.init.ItemInit;
 import net.zestyblaze.buffet.item.BuffetTools;
-import net.zestyblaze.buffet.item.knives.Knives;
+import net.zestyblaze.buffet.item.BuffetKnives;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Buffet implements ModInitializer {
 
 	public static final String MOD_ID = "buffet";
-	
+
 	public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 
 	public static final ItemGroup BUFFET_TOOLS = FabricItemGroupBuilder.build(
@@ -28,7 +28,7 @@ public class Buffet implements ModInitializer {
 
 	public static final ItemGroup BUFFET_KNIVES = FabricItemGroupBuilder.build(
 			new Identifier(MOD_ID, "buffet_knives"),
-			() -> new ItemStack(Knives.IRON_KNIFE)
+			() -> new ItemStack(BuffetKnives.IRON_KNIFE)
 	);
 
 	public static final ItemGroup BUFFET_BLOCKS = FabricItemGroupBuilder.build(
@@ -43,6 +43,7 @@ public class Buffet implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		LOGGER.info("Buffet Loading! Thanks for downloading the mod <3");
 		ItemInit.register();
 		BlockInit.register();
         EffectInit.register();

@@ -4,7 +4,7 @@ import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.zestyblaze.buffet.Buffet;
-import net.zestyblaze.buffet.effects.BleedingEffect;
+import net.zestyblaze.buffet.effect.BleedingEffect;
 
 public class EffectInit {
 

@@ -1,49 +1,49 @@
-package net.zestyblaze.buffet.item.knives;
+package net.zestyblaze.buffet.item;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.tag.ItemTags;
 import net.zestyblaze.buffet.Buffet;
 import net.zestyblaze.buffet.init.EffectInit;
+import net.zestyblaze.buffet.util.CustomKnifeBuilder;
 import org.jetbrains.annotations.NotNull;
 
-public class Knives {
+public class BuffetKnives {
 
-    public static Knife WOODEN = new Knife.KnifeBuilder("wooden")
+    public static CustomKnifeBuilder WOODEN = new CustomKnifeBuilder.KnifeBuilder("wooden")
             .setDamage(1.0f)
             .setDurability(29)
             .setRepairItem(Ingredient.fromTag(ItemTags.PLANKS))
             .build();
 
-    public static Knife STONE = new Knife.KnifeBuilder("stone")
+    public static CustomKnifeBuilder STONE = new CustomKnifeBuilder.KnifeBuilder("stone")
             .setDamage(2.0f)
             .setDurability(66)
             .setRepairItem(Ingredient.ofItems(Items.COBBLESTONE))
             .build();
 
-    public static Knife IRON = new Knife.KnifeBuilder("iron")
+    public static CustomKnifeBuilder IRON = new CustomKnifeBuilder.KnifeBuilder("iron")
             .setDamage(3.0f)
             .setDurability(125)
             .setRepairItem(Ingredient.ofItems(Items.IRON_INGOT))
             .build();
 
-    public static Knife GOLDEN = new Knife.KnifeBuilder("golden")
+    public static CustomKnifeBuilder GOLDEN = new CustomKnifeBuilder.KnifeBuilder("golden")
             .setDamage(1.0f)
             .setDurability(16)
             .setRepairItem(Ingredient.ofItems(Items.GOLD_INGOT))
             .build();
 
-    public static Knife DIAMOND = new Knife.KnifeBuilder("diamond")
+    public static CustomKnifeBuilder DIAMOND = new CustomKnifeBuilder.KnifeBuilder("diamond")
             .setDamage(4.0f)
             .setDurability(780)
             .setRepairItem(Ingredient.ofItems(Items.DIAMOND))
             .build();
 
-    public static Knife NETHERITE = new Knife.KnifeBuilder("netherite")
+    public static CustomKnifeBuilder NETHERITE = new CustomKnifeBuilder.KnifeBuilder("netherite")
             .setDamage(5.0f)
             .setDurability(1015)
             .setRepairItem(Ingredient.ofItems(Items.NETHERITE_INGOT))
@@ -67,10 +67,7 @@ public class Knives {
             stack.damage(1, attacker, (e) -> {
                 e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND);
             });
-            Buffet.LOGGER.info("Called postHit");
-            StatusEffectInstance bleed = new StatusEffectInstance(EffectInit.Bleeding, 600, 0, false, false);
-            Buffet.LOGGER.info(bleed);
-            target.addStatusEffect(bleed);
+            target.addStatusEffect(new StatusEffectInstance(EffectInit.Bleeding, 100, 0, false, false));
             return true;
         }
     }

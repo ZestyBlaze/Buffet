@@ -1,8 +1,10 @@
 {
-  "item.buffet.pan": "Pan",
-  "item.buffet.pot": "Pot",
+  "item.buffet.pan": "Metal Pan",
+  "item.buffet.pot": "Metal Pot",
   "item.buffet.baking_bowl": "Baking Bowl",
-  "item.buffet.spoon": "Spoon",
+  "item.buffet.spoon": "Wooden Spoon",
+
+  "item.buffet.bandages": "Bandages",
 
   "item.buffet.wooden_knife": "Wooden Knife",
   "item.buffet.stone_knife": "Stone Knife",
@@ -18,6 +20,8 @@
   "effect.buffet.bleeding": "Bleeding",
 
   "death.attack.bleeding": "%1$s couldn't stem the bleeding",
+
+  "item.buffet.bandage.heal": "Bleeding Stemmed",
 
   "itemGroup.buffet.buffet_tools": "Buffet Tools",
   "itemGroup.buffet.buffet_knives": "Buffet Knives",

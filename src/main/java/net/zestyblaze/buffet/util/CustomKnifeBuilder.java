@@ -1,10 +1,10 @@
-package net.zestyblaze.buffet.item.knives;
+package net.zestyblaze.buffet.util;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.zestyblaze.buffet.Buffet;
 
-public record Knife(String name, String modID, Ingredient repairItem,
-                    Integer durability, Float damage) implements ToolMaterial {
+public record CustomKnifeBuilder(String name, String modID, Ingredient repairItem,
+                                 Integer durability, Float damage) implements ToolMaterial {
 
     public String getName() {
         return this.name;
@@ -83,8 +83,8 @@ public record Knife(String name, String modID, Ingredient repairItem,
             return this;
         }
 
-        public Knife build() {
-            return new Knife(this.name, this.modID, this.repairItem, this.durability, this.damage);
+        public CustomKnifeBuilder build() {
+            return new CustomKnifeBuilder(this.name, this.modID, this.repairItem, this.durability, this.damage);
         }
     }
 

@@ -1,10 +1,9 @@
-package net.zestyblaze.buffet.effects;
+package net.zestyblaze.buffet.effect;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
-import net.minecraft.entity.player.PlayerEntity;
-import net.zestyblaze.buffet.misc.CustomDamageSource;
+import net.zestyblaze.buffet.util.CustomDamageSource;
 
 public class BleedingEffect extends StatusEffect {
     public BleedingEffect() {
@@ -18,9 +17,8 @@ public class BleedingEffect extends StatusEffect {
 
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
-        if(entity instanceof PlayerEntity) {
+        if(entity != null) {
             entity.damage(CustomDamageSource.BLEEDING, 0.3f);
         }
     }
-
 }
