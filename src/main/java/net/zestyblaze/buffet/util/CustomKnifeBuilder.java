@@ -1,4 +1,5 @@
 package net.zestyblaze.buffet.util;
+
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.zestyblaze.buffet.Buffet;
@@ -50,7 +51,7 @@ public record CustomKnifeBuilder(String name, String modID, Ingredient repairIte
 
     public static class KnifeBuilder {
         private String name;
-        private String modID = Buffet.MOD_ID;
+        private String modID = Buffet.MODID;
         private Ingredient repairItem;
 
         private Integer durability;

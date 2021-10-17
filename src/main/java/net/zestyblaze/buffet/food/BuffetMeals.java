@@ -12,21 +12,30 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
-import net.zestyblaze.buffet.Buffet;
+import net.zestyblaze.buffet.util.BuffetGroups;
 
 public class BuffetMeals {
 
-    public static final Item CHORUS_SOUP = new ChorusSoupItem(new FabricItemSettings()
-            .group(Buffet.BUFFET_MEALS)
+    public static final Item PEPPERONI_PIZZA = new Item(new FabricItemSettings()
             .food(new FoodComponent.Builder()
-                    .hunger(8)
-                    .saturationModifier(8.4f)
-                    .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 100, 2, false, false), 1.0F)
+                    .hunger(1)
+                    .saturationModifier(1)
                     .build()
             )
+            .group(BuffetGroups.BUFFET_MEALS)
     );
 
-    public static class ChorusSoupItem extends ChorusFruitItem {
+    public static final Item CHORUS_SOUP = new ChorusSoupItem(new FabricItemSettings()
+            .food(new FoodComponent.Builder()
+                    .hunger(7)
+                    .saturationModifier(7.8f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200, 0, false, false), 1.0F)
+                    .build()
+            )
+            .group(BuffetGroups.BUFFET_MEALS)
+    );
+
+    private static class ChorusSoupItem extends ChorusFruitItem {
         public ChorusSoupItem(Settings settings) {
             super(settings);
         }

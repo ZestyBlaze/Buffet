@@ -8,15 +8,15 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
-import net.zestyblaze.buffet.Buffet;
 import net.zestyblaze.buffet.init.EffectInit;
+import net.zestyblaze.buffet.util.BuffetGroups;
 import org.jetbrains.annotations.NotNull;
 
 public class BandageItem extends Item {
 
     public static final BandageItem BANDAGE = new BandageItem(
             new FabricItemSettings()
-                    .group(Buffet.BUFFET_TOOLS)
+                    .group(BuffetGroups.BUFFET_TOOLS)
                     .maxCount(16)
     );
 

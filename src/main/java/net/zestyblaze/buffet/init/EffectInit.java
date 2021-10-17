@@ -11,7 +11,7 @@ public class EffectInit {
     public static final StatusEffect Bleeding = new BleedingEffect();
 
     public static void register() {
-        Registry.register(Registry.STATUS_EFFECT, new Identifier(Buffet.MOD_ID, "bleeding"), Bleeding);
+        Registry.register(Registry.STATUS_EFFECT, new Identifier(Buffet.MODID, "bleeding"), Bleeding);
     }
 
 }

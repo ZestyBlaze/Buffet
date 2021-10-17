@@ -1,8 +1,9 @@
 {
-  "item.buffet.pan": "Metal Pan",
-  "item.buffet.pot": "Metal Pot",
+  "item.buffet.metal_pan": "Metal Pan",
+  "item.buffet.metal_pot": "Metal Pot",
   "item.buffet.baking_bowl": "Baking Bowl",
-  "item.buffet.spoon": "Wooden Spoon",
+  "item.buffet.wooden_spoon": "Wooden Spoon",
+  "item.buffet.glass": "Glass",
 
   "item.buffet.bandages": "Bandages",
 
@@ -13,7 +14,10 @@
   "item.buffet.diamond_knife": "Diamond Knife",
   "item.buffet.netherite_knife": "Netherite Knife",
 
+  "item.buffet.pepperoni_pizza": "Pepperoni Pizza",
   "item.buffet.chorus_soup": "Chorus Soup",
+
+  "item.buffet.strawberry_milkshake": "Strawberry Milkshake",
 
   "block.buffet.stove": "Stove",
 
@@ -26,5 +30,6 @@
   "itemGroup.buffet.buffet_tools": "Buffet Tools",
   "itemGroup.buffet.buffet_knives": "Buffet Knives",
   "itemGroup.buffet.buffet_blocks": "Buffet Blocks",
-  "itemGroup.buffet.buffet_meals": "Buffet Meals"
+  "itemGroup.buffet.buffet_meals": "Buffet Meals",
+  "itemGroup.buffet.buffet_drinks": "Buffet Drinks"
 }
