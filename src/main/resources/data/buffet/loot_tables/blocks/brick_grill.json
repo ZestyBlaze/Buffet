@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "buffet:stove"
+          "name": "buffet:brick_grill"
         }
       ],
       "conditions": [

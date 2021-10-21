@@ -7,7 +7,7 @@ import net.minecraft.block.Material;
 
 public class BuffetBlocks {
 
-    public static final Block STOVE = new Block(FabricBlockSettings.of(
+    public static final Block BRICK_GRILL = new Block(FabricBlockSettings.of(
             Material.REPAIR_STATION)
             .strength(2.5f, 2.5f)
             .breakByTool(FabricToolTags.AXES)

@@ -25,7 +25,7 @@ public class BuffetGroups {
 
     public static final ItemGroup BUFFET_BLOCKS = FabricItemGroupBuilder.build(
             new Identifier(Buffet.MODID, "buffet_blocks"),
-            () -> new ItemStack(BuffetBlocks.STOVE)
+            () -> new ItemStack(BuffetBlocks.BRICK_GRILL)
     );
 
     public static final ItemGroup BUFFET_MEALS = FabricItemGroupBuilder.build(

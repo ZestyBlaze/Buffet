@@ -42,7 +42,7 @@ public class ItemInit {
 
 
         ///Cooking Blocks
-        Registry.register(Registry.ITEM, new Identifier(Buffet.MODID, "stove"), new BlockItem(BuffetBlocks.STOVE, new FabricItemSettings().group(BuffetGroups.BUFFET_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier(Buffet.MODID, "brick_grill"), new BlockItem(BuffetBlocks.BRICK_GRILL, new FabricItemSettings().group(BuffetGroups.BUFFET_BLOCKS)));
     }
 
 }
