@@ -17,8 +17,8 @@ public class BleedingEffect extends StatusEffect {
 
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
-        if(entity != null) {
-            entity.damage(CustomDamageSource.BLEEDING, 0.3f);
+        if(entity != null && !entity.isUndead()) {
+            entity.damage(CustomDamageSource.BLEEDING, 0.4f);
         }
     }
 }

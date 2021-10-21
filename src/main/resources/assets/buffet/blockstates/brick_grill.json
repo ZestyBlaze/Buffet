@@ -1,5 +1,23 @@
 {
   "variants": {
-    "": { "model": "buffet:block/brick_grill" }
+    "facing=east": {
+      "model": "buffet:block/brick_grill",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=north": {
+      "model": "buffet:block/brick_grill",
+      "uvlock": true
+    },
+    "facing=south": {
+      "model": "buffet:block/brick_grill",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west": {
+      "model": "buffet:block/brick_grill",
+      "y": 270,
+      "uvlock": true
+    }
   }
 }

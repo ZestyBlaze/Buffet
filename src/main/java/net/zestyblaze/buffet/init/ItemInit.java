@@ -5,7 +5,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.zestyblaze.buffet.Buffet;
-import net.zestyblaze.buffet.block.BuffetBlocks;
+import net.zestyblaze.buffet.block.BrickGrillBlock;
 import net.zestyblaze.buffet.food.BuffetDrinks;
 import net.zestyblaze.buffet.food.BuffetMeals;
 import net.zestyblaze.buffet.item.BandageItem;
@@ -42,7 +42,7 @@ public class ItemInit {
 
 
         ///Cooking Blocks
-        Registry.register(Registry.ITEM, new Identifier(Buffet.MODID, "brick_grill"), new BlockItem(BuffetBlocks.BRICK_GRILL, new FabricItemSettings().group(BuffetGroups.BUFFET_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier(Buffet.MODID, "brick_grill"), new BlockItem(BrickGrillBlock.BRICK_GRILL, new FabricItemSettings().group(BuffetGroups.BUFFET_BLOCKS)));
     }
 
 }

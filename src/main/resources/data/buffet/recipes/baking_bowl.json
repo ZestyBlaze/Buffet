@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "  p",
-    " s ",
-    "s  "
+    "   ",
+    "p p",
+    " s "
   ],
   "key": {
     "p": {
       "tag": "minecraft:planks"
     },
     "s": {
-      "item": "minecraft:stick"
+      "tag": "minecraft:wooden_slabs"
     }
   },
   "result": {
-    "item": "buffet:wooden_spoon"
+    "item": "buffet:baking_bowl"
   }
 }

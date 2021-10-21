@@ -2,7 +2,7 @@
   "parent": "minecraft:block/orientable_with_bottom",
   "textures": {
     "top": "buffet:block/brick_grill_top",
-    "front": "buffet:block/brick_grill_top",
+    "front": "buffet:block/brick_grill_side",
     "side": "buffet:block/brick_grill_side",
     "bottom": "buffet:block/brick_grill_bottom"
   }

@@ -5,7 +5,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.zestyblaze.buffet.Buffet;
-import net.zestyblaze.buffet.block.BuffetBlocks;
+import net.zestyblaze.buffet.block.BrickGrillBlock;
 import net.zestyblaze.buffet.food.BuffetDrinks;
 import net.zestyblaze.buffet.food.BuffetMeals;
 import net.zestyblaze.buffet.item.BuffetKnives;
@@ -25,7 +25,7 @@ public class BuffetGroups {
 
     public static final ItemGroup BUFFET_BLOCKS = FabricItemGroupBuilder.build(
             new Identifier(Buffet.MODID, "buffet_blocks"),
-            () -> new ItemStack(BuffetBlocks.BRICK_GRILL)
+            () -> new ItemStack(BrickGrillBlock.BRICK_GRILL)
     );
 
     public static final ItemGroup BUFFET_MEALS = FabricItemGroupBuilder.build(
