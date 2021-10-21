@@ -21,6 +21,10 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(Buffet.MODID, "baking_bowl"), BuffetTools.BAKING_BOWL);
         Registry.register(Registry.ITEM, new Identifier(Buffet.MODID, "wooden_spoon"), BuffetTools.WOODEN_SPOON);
         Registry.register(Registry.ITEM, new Identifier(Buffet.MODID, "glass"), BuffetTools.GLASS);
+        Registry.register(Registry.ITEM, new Identifier(Buffet.MODID, "unfired_plate"), BuffetTools.UNFIRED_PLATE);
+        Registry.register(Registry.ITEM, new Identifier(Buffet.MODID, "unfired_mug"), BuffetTools.UNFIRED_MUG);
+        Registry.register(Registry.ITEM, new Identifier(Buffet.MODID, "plate"), BuffetTools.PLATE);
+        Registry.register(Registry.ITEM, new Identifier(Buffet.MODID, "mug"), BuffetTools.MUG);
 
         ///Meals
         Registry.register(Registry.ITEM, new Identifier(Buffet.MODID, "pepperoni_pizza"), BuffetMeals.PEPPERONI_PIZZA);

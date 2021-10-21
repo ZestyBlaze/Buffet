@@ -35,4 +35,24 @@ public class BuffetTools {
                     .group(BuffetGroups.BUFFET_TOOLS)
     );
 
+    public static final Item UNFIRED_PLATE = new Item(
+            new FabricItemSettings()
+                    .group(BuffetGroups.BUFFET_TOOLS)
+    );
+
+    public static final Item UNFIRED_MUG = new Item(
+            new FabricItemSettings()
+                    .group(BuffetGroups.BUFFET_TOOLS)
+    );
+
+    public static final Item PLATE = new Item(
+            new FabricItemSettings()
+                    .group(BuffetGroups.BUFFET_TOOLS)
+    );
+
+    public static final Item MUG = new Item(
+            new FabricItemSettings()
+                    .group(BuffetGroups.BUFFET_TOOLS)
+    );
+
 }

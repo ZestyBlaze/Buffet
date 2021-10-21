@@ -4,6 +4,11 @@
   "item.buffet.baking_bowl": "Baking Bowl",
   "item.buffet.wooden_spoon": "Wooden Spoon",
   "item.buffet.glass": "Glass",
+  "item.buffet.unfired_plate": "Unfired Plate",
+  "item.buffet.unfired_mug": "Unfired Mug",
+  "item.buffet.plate": "Plate",
+  "item.buffet.mug": "Mug",
+
 
   "item.buffet.bandages": "Bandages",
 
@@ -31,5 +36,6 @@
   "itemGroup.buffet.buffet_knives": "Buffet Knives",
   "itemGroup.buffet.buffet_blocks": "Buffet Blocks",
   "itemGroup.buffet.buffet_meals": "Buffet Meals",
-  "itemGroup.buffet.buffet_drinks": "Buffet Drinks"
+  "itemGroup.buffet.buffet_drinks": "Buffet Drinks",
+  "itemGroup.buffet.buffet_misc": "Buffet Misc"
 }
