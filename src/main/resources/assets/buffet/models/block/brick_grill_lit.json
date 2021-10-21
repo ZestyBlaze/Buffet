@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/orientable_with_bottom",
   "textures": {
-    "top": "buffet:block/brick_grill_top_unlit",
-    "front": "buffet:block/brick_grill_front_unlit",
+    "top": "buffet:block/brick_grill_top_lit",
+    "front": "buffet:block/brick_grill_front_lit",
     "side": "buffet:block/brick_grill_side",
     "bottom": "buffet:block/brick_grill_bottom"
   }
