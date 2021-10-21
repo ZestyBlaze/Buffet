@@ -16,7 +16,7 @@ public class BandageItem extends Item {
 
     public static final BandageItem BANDAGE = new BandageItem(
             new FabricItemSettings()
-                    .group(BuffetGroups.BUFFET_TOOLS)
+                    .group(BuffetGroups.BUFFET_MISC)
                     .maxCount(16)
     );
 
