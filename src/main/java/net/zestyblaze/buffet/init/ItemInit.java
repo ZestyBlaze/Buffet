@@ -2,13 +2,18 @@ package net.zestyblaze.buffet.init;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.FoodComponent;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.zestyblaze.buffet.Buffet;
 import net.zestyblaze.buffet.block.BrickGrillBlock;
+import net.zestyblaze.buffet.block.StrawberryBlock;
 import net.zestyblaze.buffet.food.BuffetDrinks;
 import net.zestyblaze.buffet.food.BuffetMeals;
 import net.zestyblaze.buffet.item.BandageItem;
+import net.zestyblaze.buffet.item.BuffetFruits;
 import net.zestyblaze.buffet.item.BuffetTools;
 import net.zestyblaze.buffet.item.BuffetKnives;
 import net.zestyblaze.buffet.util.BuffetGroups;
@@ -47,6 +52,9 @@ public class ItemInit {
 
         ///Cooking Blocks
         Registry.register(Registry.ITEM, new Identifier(Buffet.MODID, "brick_grill"), new BlockItem(BrickGrillBlock.BRICK_GRILL, new FabricItemSettings().group(BuffetGroups.BUFFET_BLOCKS)));
+
+        //Fruits
+        Registry.register(Registry.ITEM, new Identifier(Buffet.MODID, "strawberries"), BuffetFruits.STRAWBERRIES);
     }
 
 }
