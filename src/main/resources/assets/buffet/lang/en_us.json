@@ -32,6 +32,10 @@
 
   "item.buffet.bandage.heal": "Bleeding Stemmed",
 
+  "item.buffet.strawberries": "Strawberries",
+
+  "block.buffet.strawberry_plant": "Strawberry Plant",
+
   "itemGroup.buffet.buffet_tools": "Buffet Tools",
   "itemGroup.buffet.buffet_knives": "Buffet Knives",
   "itemGroup.buffet.buffet_blocks": "Buffet Blocks",

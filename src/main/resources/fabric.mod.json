@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.zestyblaze.buffet.Buffet"
+    ],
+    "client": [
+      "net.zestyblaze.buffet.BuffetClient"
     ]
   },
   "mixins": [
