@@ -75,7 +75,7 @@ public class StrawberryBlock extends CropBlock {
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         float random = new Random().nextFloat();
         if (this.isMature(world.getBlockState(pos))) {
-            world.setBlockState(pos, this.getDefaultState().with(AGE, 1));
+            world.setBlockState(pos, this.getDefaultState().with(AGE, 0));
             ItemScatterer.spawn(world, pos.getX() + random, pos.getY() + random, pos.getZ() + random, BuffetFruits.STRAWBERRIES.getDefaultStack());
         }
         return super.onUse(state, world, pos, player, hand, hit);
