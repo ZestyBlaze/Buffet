@@ -5,6 +5,7 @@ import net.minecraft.entity.damage.DamageSource;
 public class CustomDamageSource extends DamageSource {
 
     public static final CustomDamageSource BLEEDING = (CustomDamageSource) new CustomDamageSource("bleeding").setBypassesArmor();
+    public static final CustomDamageSource GRILL = (CustomDamageSource) new CustomDamageSource("grill").setFire();
 
     private boolean bypassesArmor;
     private float exhaustion = 0.1F;

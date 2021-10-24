@@ -22,7 +22,7 @@
       "net.zestyblaze.buffet.Buffet"
     ],
     "client": [
-      "net.zestyblaze.buffet.BuffetClient"
+      "net.zestyblaze.buffet.client.BuffetClient"
     ]
   },
   "mixins": [

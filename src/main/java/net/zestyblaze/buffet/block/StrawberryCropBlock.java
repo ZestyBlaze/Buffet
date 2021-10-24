@@ -13,15 +13,17 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import net.zestyblaze.buffet.item.BuffetFruits;
+import net.zestyblaze.buffet.food.BuffetFruits;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-public class StrawberryBlock extends CropBlock {
+@SuppressWarnings("deprecation")
+public class StrawberryCropBlock extends CropBlock {
 
-    public static final Block STRAWBERRY_PLANT = new StrawberryBlock(FabricBlockSettings.of(Material.PLANT)
+    public static final Block STRAWBERRY_PLANT = new StrawberryCropBlock(FabricBlockSettings.of(Material.PLANT)
             .ticksRandomly()
             .collidable(false)
             .breakInstantly()
@@ -31,33 +33,33 @@ public class StrawberryBlock extends CropBlock {
 
     private static final Map<String, BlockPos> NEARBY_STRAWBERRIES = new HashMap<>();
 
-    public StrawberryBlock(Settings settings) {
+    public StrawberryCropBlock(Settings settings) {
         super(settings);
     }
 
     @Override
-    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+    public void randomTick(BlockState state, ServerWorld world, @NotNull BlockPos pos, Random random) {
         NEARBY_STRAWBERRIES.put("north", pos.north());
         NEARBY_STRAWBERRIES.put("east", pos.east());
         NEARBY_STRAWBERRIES.put("south", pos.south());
         NEARBY_STRAWBERRIES.put("west", pos.west());
 
-
         NEARBY_STRAWBERRIES.forEach((str, nearbyPos) -> {
-            if (world.getBlockState(nearbyPos).isOf(STRAWBERRY_PLANT) && ((Integer) world.getBlockState(nearbyPos).get(AGE)) < 3) {
+            if (world.getBlockState(nearbyPos).isOf(STRAWBERRY_PLANT) && world.getBlockState(nearbyPos).get(AGE) < 3) {
                 if (random.nextInt(20) == 0) {
-                    ((StrawberryBlock) world.getBlockState(nearbyPos).getBlock()).applyGrowth(world, nearbyPos, world.getBlockState(nearbyPos));
+                    ((StrawberryCropBlock) world.getBlockState(nearbyPos).getBlock()).applyGrowth(world, nearbyPos, world.getBlockState(nearbyPos));
                 }
             }
         });
     }
+
     @Override
     protected ItemConvertible getSeedsItem() {
         return BuffetFruits.STRAWBERRIES;
     }
 
     @Override
-    protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
+    protected boolean canPlantOnTop(@NotNull BlockState floor, BlockView world, BlockPos pos) {
         return floor.isOf(Blocks.MOSS_BLOCK) || floor.isOf(Blocks.FARMLAND);
     }
 
@@ -72,7 +74,7 @@ public class StrawberryBlock extends CropBlock {
     }
 
     @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+    public ActionResult onUse(BlockState state, @NotNull World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         float random = new Random().nextFloat();
         if (this.isMature(world.getBlockState(pos))) {
             world.setBlockState(pos, this.getDefaultState().with(AGE, 0));

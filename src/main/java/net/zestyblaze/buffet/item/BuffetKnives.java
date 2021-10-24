@@ -57,7 +57,7 @@ public class BuffetKnives {
     public static ToolItem NETHERITE_KNIFE = new KnifeItem(NETHERITE, 0, -1.6f, new Item.Settings().group(BuffetGroups.BUFFET_KNIVES));
 
 
-    public static class KnifeItem extends SwordItem {
+    private static class KnifeItem extends SwordItem {
         public KnifeItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
             super(toolMaterial, attackDamage, attackSpeed, settings);
         }

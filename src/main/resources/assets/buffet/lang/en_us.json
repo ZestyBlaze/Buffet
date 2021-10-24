@@ -29,6 +29,7 @@
   "effect.buffet.bleeding": "Bleeding",
 
   "death.attack.bleeding": "%1$s couldn't stem the bleeding",
+  "death.attack.grill": "%1$s forgot the grill was on",
 
   "item.buffet.bandage.heal": "Bleeding Stemmed",
 

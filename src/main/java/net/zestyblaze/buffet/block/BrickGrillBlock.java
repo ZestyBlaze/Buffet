@@ -7,6 +7,8 @@ import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ElytraItem;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
@@ -15,6 +17,7 @@ import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+import net.zestyblaze.buffet.util.CustomDamageSource;
 import org.jetbrains.annotations.NotNull;
 
 public class BrickGrillBlock extends HorizontalFacingBlock {
@@ -23,9 +26,9 @@ public class BrickGrillBlock extends HorizontalFacingBlock {
     public static final BooleanProperty LIT = Properties.LIT;
 
     public static final BrickGrillBlock BRICK_GRILL = new BrickGrillBlock(FabricBlockSettings.of(
-                    Material.REPAIR_STATION)
-            .strength(2.5f, 2.5f)
-            .breakByTool(FabricToolTags.AXES)
+                    Material.STONE)
+            .strength(2, 6)
+            .breakByTool(FabricToolTags.PICKAXES)
             .requiresTool()
     );
 
@@ -47,7 +50,7 @@ public class BrickGrillBlock extends HorizontalFacingBlock {
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, @NotNull Entity entity) {
         if(!entity.isFireImmune() && entity instanceof LivingEntity && !EnchantmentHelper.hasFrostWalker((LivingEntity)entity)) {
-            entity.damage(DamageSource.HOT_FLOOR, 1.0F);
+            entity.damage(CustomDamageSource.GRILL, 1.0F);
         }
     }
 }
