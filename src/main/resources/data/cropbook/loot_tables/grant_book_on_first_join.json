@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{\"patchouli:book\": \"cropbook\"}"
+              "tag": "{\"patchouli:book\": \"buffet:cropbook\"}"
             }
           ]
         }
