@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " c ",
+    "s  "
+  ],
+  "key": {
+    "c": {
+      "tag": "minecraft:stone_crafting_materials"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "buffet:stone_knife"
+  }
+}

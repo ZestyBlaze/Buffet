@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "buffet:unfired_mug"
+  },
+  "result": "buffet:mug",
+  "experience": 0.3,
+  "cookingtime": 200
+}

@@ -1,8 +1,16 @@
 {
-  "item.buffet.pan": "Pan",
-  "item.buffet.pot": "Pot",
+  "item.buffet.metal_pan": "Metal Pan",
+  "item.buffet.metal_pot": "Metal Pot",
   "item.buffet.baking_bowl": "Baking Bowl",
-  "item.buffet.spoon": "Spoon",
+  "item.buffet.wooden_spoon": "Wooden Spoon",
+  "item.buffet.glass": "Glass",
+  "item.buffet.unfired_plate": "Unfired Plate",
+  "item.buffet.unfired_mug": "Unfired Mug",
+  "item.buffet.plate": "Plate",
+  "item.buffet.mug": "Mug",
+
+
+  "item.buffet.bandages": "Bandages",
 
   "item.buffet.wooden_knife": "Wooden Knife",
   "item.buffet.stone_knife": "Stone Knife",
@@ -11,16 +19,29 @@
   "item.buffet.diamond_knife": "Diamond Knife",
   "item.buffet.netherite_knife": "Netherite Knife",
 
+  "item.buffet.pepperoni_pizza": "Pepperoni Pizza",
   "item.buffet.chorus_soup": "Chorus Soup",
 
-  "block.buffet.stove": "Stove",
+  "item.buffet.strawberry_milkshake": "Strawberry Milkshake",
+
+  "block.buffet.brick_grill": "Brick Grill [NYI]",
 
   "effect.buffet.bleeding": "Bleeding",
 
   "death.attack.bleeding": "%1$s couldn't stem the bleeding",
+  "death.attack.grill": "%1$s forgot the grill was on",
+
+  "item.buffet.bandage.heal": "Bleeding Stemmed",
+
+  "item.buffet.strawberries": "Strawberries",
+
+  "block.buffet.strawberry_plant": "Strawberry Plant",
 
   "itemGroup.buffet.buffet_tools": "Buffet Tools",
   "itemGroup.buffet.buffet_knives": "Buffet Knives",
   "itemGroup.buffet.buffet_blocks": "Buffet Blocks",
-  "itemGroup.buffet.buffet_meals": "Buffet Meals"
+  "itemGroup.buffet.buffet_meals": "Buffet Meals",
+  "itemGroup.buffet.buffet_fruits": "Buffet Fruits",
+  "itemGroup.buffet.buffet_drinks": "Buffet Drinks",
+  "itemGroup.buffet.buffet_misc": "Buffet Misc"
 }
